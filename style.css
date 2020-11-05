@@ -1,0 +1,304 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+body {
+  background-color: rgb(230, 223, 223);
+}
+header {
+  height: 100vh;
+  position: fixed;
+  width: 10vw;
+  background-color: black;
+  color: lightgrey;
+}
+header ul {
+  list-style-type: none;
+}
+header ul li a {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: #9198e5;
+}
+
+header ul li a:hover {
+  color: white;
+}
+
+header ul li a i {
+  font-size: 2rem;
+  padding-top: 1rem;
+}
+aside {
+  height: 98vh;
+  border-bottom-right-radius: 10px;
+  position: fixed;
+  width: 30vw;
+  background-color: #333;
+  color: rgb(197, 192, 192);
+  left: 10vw;
+  display: grid;
+}
+
+#aside_navigation {
+  margin: 2rem;
+  max-height: 50vh;
+  width: 100%;
+  background: black;
+  display: flex;
+  flex-direction: column;
+  right: 0;
+}
+
+.inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+#appdescription {
+  padding: 1rem;
+}
+
+#appdescription i {
+  padding-left: 2rem;
+}
+
+#appdescription h3 {
+  color: #e66465;
+  line-height: 3rem;
+  padding-bottom: 1rem;
+}
+
+#appdescription p {
+  font-size: 0.7rem;
+  line-height: 1rem;
+  letter-spacing: 0.1pc;
+}
+
+#aside_navigation i,
+a {
+  font-size: 2rem;
+  padding-top: 0.5rem;
+  padding-right: 1rem;
+  transition: -webkit-transform 0.2s ease-in-out;
+}
+#aside_navigation i:hover,
+a:hover {
+  cursor: pointer;
+  text-shadow: 1px 0 grey;
+}
+
+@keyframes fontSwitch {
+}
+
+#lowerdescriptionDefault {
+  padding-left: 1rem;
+}
+
+section {
+  width: 60vw;
+  height: 100vh;
+  right: 0;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+#triangleContainer {
+  position: fixed;
+  display: grid;
+  width: 20rem;
+  height: 20rem;
+  row-gap: 5px;
+  grid-template-rows: repeat(10%, 1vw);
+  justify-items: center;
+}
+.triangleSection {
+  border-radius: 3rem;
+}
+#one {
+  background: linear-gradient(#e66465, #9198e5);
+  width: 2rem;
+  animation-name: one;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+}
+@keyframes one {
+  0% {
+    width: 2rem;
+  }
+  25% {
+    width: 4rem;
+  }
+  100% {
+    width: 2rem;
+  }
+}
+#two {
+  background: linear-gradient(#e66465, #9198e5);
+  width: 4rem;
+  animation-name: two;
+  animation-duration: 1.5s;
+  animation-delay: 0.1s;
+  animation-iteration-count: infinite;
+}
+@keyframes two {
+  0% {
+    width: 4rem;
+  }
+  25% {
+    width: 8rem;
+  }
+  100% {
+    width: 4rem;
+  }
+}
+
+#three {
+  background: linear-gradient(#e66465, #9198e5);
+  width: 6rem;
+  animation-name: three;
+  animation-duration: 1.5s;
+  animation-delay: 0.15s;
+  animation-iteration-count: infinite;
+}
+@keyframes three {
+  0% {
+    width: 6rem;
+  }
+  25% {
+    width: 9rem;
+  }
+  100% {
+    width: 6rem;
+  }
+}
+
+#four {
+  background: linear-gradient(#e66465, #9198e5);
+  width: 8rem;
+  animation-name: four;
+  animation-duration: 1.5s;
+  animation-delay: 0.2s;
+  animation-iteration-count: infinite;
+}
+@keyframes four {
+  0% {
+    width: 8rem;
+  }
+  25% {
+    width: 10rem;
+  }
+  100% {
+    width: 8rem;
+  }
+}
+#five {
+  background: linear-gradient(#e66465, #9198e5);
+  width: 10rem;
+  animation-name: five;
+  animation-duration: 1.5s;
+  animation-delay: 0.3s;
+  animation-iteration-count: infinite;
+}
+@keyframes five {
+  0% {
+    width: 10rem;
+  }
+  25% {
+    width: 12rem;
+  }
+  100% {
+    width: 10rem;
+  }
+}
+
+#six {
+  background: linear-gradient(#e66465, #9198e5);
+  width: 12rem;
+  animation-name: six;
+  animation-duration: 1.5s;
+  animation-delay: 0.4s;
+  animation-iteration-count: infinite;
+}
+@keyframes six {
+  0% {
+    width: 12rem;
+  }
+  25% {
+    width: 15rem;
+  }
+  100% {
+    width: 12rem;
+  }
+}
+#seven {
+  background: linear-gradient(#e66465, #9198e5);
+  width: 14rem;
+  animation-name: seven;
+  animation-duration: 1.5s;
+  animation-delay: 0.5s;
+  animation-iteration-count: infinite;
+}
+@keyframes seven {
+  0% {
+    width: 14rem;
+  }
+  25% {
+    width: 16rem;
+  }
+  100% {
+    width: 14rem;
+  }
+}
+#eight {
+  background: linear-gradient(#e66465, #9198e5);
+  width: 16rem;
+  animation-name: eight;
+  animation-duration: 1.5s;
+  animation-delay: 0.6s;
+  animation-iteration-count: infinite;
+}
+@keyframes eight {
+  0% {
+    width: 16rem;
+  }
+  25% {
+    width: 18rem;
+  }
+  100% {
+    width: 16rem;
+  }
+}
+#nine {
+  background: linear-gradient(#e66465, #9198e5);
+  width: 18rem;
+  animation-name: nine;
+  animation-duration: 1.5s;
+  animation-delay: 0.7s;
+  animation-iteration-count: infinite;
+}
+@keyframes nine {
+  0% {
+    width: 18rem;
+  }
+  25% {
+    width: 19rem;
+  }
+  100% {
+    width: 18rem;
+  }
+}
